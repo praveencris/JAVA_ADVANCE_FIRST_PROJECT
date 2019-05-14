@@ -23,9 +23,24 @@ public class WelcomeServlet extends HttpServlet
 		//Existing session will be reused and no new session will be created.
 		HttpSession ses1=req.getSession(false);
 		
-		String logVal=(String)ses1.getId();
-		out.println(logVal);
+		String userName=(String)ses1.getAttribute("loginval");
+        String passWord=(String)ses1.getAttribute("passval");
+		System.out.println(userName+" "+passWord);
 	
 	
+	}
+
+	@Override
+	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		super.service(req, resp);
+		PrintWriter out=resp.getWriter();
+		
+		//Existing session will be reused and no new session will be created.
+		HttpSession ses1=req.getSession(false);
+		
+		String userName=(String)ses1.getAttribute("loginval");
+        String passWord=(String)ses1.getAttribute("passval");
+		System.out.println(userName+" "+passWord);
 	}
 }

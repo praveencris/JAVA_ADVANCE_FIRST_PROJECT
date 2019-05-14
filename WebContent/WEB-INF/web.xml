@@ -25,8 +25,6 @@
     <servlet-name>Login</servlet-name>
     <url-pattern>/LoginServlet</url-pattern>
   </servlet-mapping>
-  
-  
   <servlet>
     <servlet-name>Welcome</servlet-name>
     <servlet-class>login.WelcomeServlet</servlet-class>
@@ -35,4 +33,15 @@
     <servlet-name>Welcome</servlet-name>
     <url-pattern>/Welcome</url-pattern>
   </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>Retrieve</servlet-name>
+    <servlet-class>firstpack.RetrieveServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Retrieve</servlet-name>
+    <url-pattern>/RetrieveServlet</url-pattern>
+  </servlet-mapping>
+  
+
 </web-app>

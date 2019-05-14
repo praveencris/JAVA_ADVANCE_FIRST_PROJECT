@@ -54,7 +54,10 @@ public class LoginServlet extends HttpServlet {
 			HttpSession ses=req.getSession(true);
 			//Will create new session if session does not exist in project otherwise use existing session
 			ses.setAttribute("loginval", login);
-			out.println("Session id is "+ses.getId());
+			ses.setAttribute("passval", pass);
+			
+		    dis=getServletContext().getRequestDispatcher("/Welcome.html");
+		    dis.forward(req,resp);
 			
 		/*	int x=5;
 			ServletContext sc=getServletContext();
