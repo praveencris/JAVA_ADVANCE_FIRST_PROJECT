@@ -8,14 +8,31 @@
     <welcome-file>default.html</welcome-file>
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
-
   </welcome-file-list>
-<servlet>
-<servlet-name>First</servlet-name>
-<servlet-class>firstpack.FirstServlet</servlet-class>
-</servlet>
-<servlet-mapping>
-<servlet-name>First</servlet-name>
-<url-pattern>/myfirst/second/third</url-pattern>
-</servlet-mapping>
+  <servlet>
+    <servlet-name>First</servlet-name>
+    <servlet-class>firstpack.FirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>First</servlet-name>
+    <url-pattern>/myfirst/second/third</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>login.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>Welcome</servlet-name>
+    <servlet-class>login.WelcomeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Welcome</servlet-name>
+    <url-pattern>/Welcome</url-pattern>
+  </servlet-mapping>
 </web-app>

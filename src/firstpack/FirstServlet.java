@@ -16,5 +16,7 @@ public class FirstServlet extends HttpServlet {
 				"    <td>January</td>\r\n" + 
 				"    <td>$100</td>\r\n" + 
 				"  </tr></table>");
+		ServletContext sc=getServletContext();
+		out.println(sc.getAttribute("val"));
 	}
 }
